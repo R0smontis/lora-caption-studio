@@ -1,0 +1,10 @@
+node_modules/
+dist/
+src-tauri/target/
+.vite/
+*.log
+.DS_Store
+
+# 随包分发的运行时依赖（体积大，构建时从 NuGet / 本机提取；见 README「运行时资源」）
+src-tauri/resources/cuda/
+src-tauri/resources/onnxruntime/
