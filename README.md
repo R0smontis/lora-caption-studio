@@ -124,3 +124,15 @@ CI=false npm.cmd run tauri build
 - **`resources/onnxruntime/`**：`onnxruntime.dll`、`onnxruntime_providers_cuda.dll`、`onnxruntime_providers_shared.dll`（取自 NuGet `Microsoft.ML.OnnxRuntime.Gpu.Windows` 1.24+ 或 DirectML 包）。
 - **`resources/cuda/`**：CUDA 12.8 及 cuDNN 9 运行时动态库（`cudart64_12.dll`、`cublas64_12.dll`、`cublasLt64_12.dll`、`cufft64_11.dll` 与 `cudnn*64_9.dll`）。
 
+---
+
+## 开源许可
+
+本项目以 [MIT License](LICENSE) 发布，可自由使用、修改与分发（含商业用途），保留版权声明即可。
+
+第三方资源归属：
+
+- 依赖库：Tauri、React、ONNX Runtime、lucide-react 等均为 MIT / Apache-2.0 / ISC 许可，与本项目兼容。
+- `src-tauri/resources/wd14_selected_tags.csv`：摘自 [SmilingWolf 的 WD Tagger 系列](https://huggingface.co/SmilingWolf)（Apache-2.0）的标签表，用于本地打标模型输出对齐。
+- 本地打标模型权重（WD Tagger / EVA02 系列）不随本仓库或安装包分发，由用户在应用内按需下载，遵循各自模型仓库的许可。
+- CUDA / cuDNN 运行库不随本仓库分发，需按 [NVIDIA 官方发行包](https://developer.nvidia.com/cuda-downloads) 的可再分发条款自行获取。

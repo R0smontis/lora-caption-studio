@@ -2,7 +2,8 @@
 name = "lora-caption-studio"
 version = "0.1.0"
 description = "LoRA image caption generation, revision and dataset text editor"
-authors = ["Local"]
+authors = ["R0smontis"]
+license = "MIT"
 edition = "2021"
 
 [lib]
